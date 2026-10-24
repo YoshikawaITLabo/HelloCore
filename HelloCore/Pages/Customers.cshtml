@@ -1,0 +1,24 @@
+﻿@page
+@model HelloCore.Pages.CustomersModel
+@{
+    ViewData["Title"] = "顧客一覧";
+}
+<h1>顧客一覧</h1>
+
+<table class="table">
+    <thead>
+        <tr><th>ID</th><th>名前</th><th>電話</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model.CustomerList)
+        {
+            <tr>
+                <td><a asp-page="CustomerEdit" asp-route-id="@c.Id">@c.Id</a></td>
+                <td>@c.Name</td>
+                <td>@c.Tel</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+<a asp-page="CustomerCreate" class="btn btn-primary">新規登録</a>
