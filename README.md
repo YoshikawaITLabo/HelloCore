@@ -20,6 +20,11 @@ VB.NET での業務システム開発の経験をもとに、ASP.NET Core / C# �
 - 顧客情報の編集
 - 顧客の削除（論理削除）
 
+## データベース
+
+- [テーブル定義書](docs/table-definition.md)
+- [テーブル作成SQL](Database/create_tables.sql)
+- 
 ## 工夫した点
 
 - パラメータ化クエリによる SQL インジェクション対策
